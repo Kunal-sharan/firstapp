@@ -6,9 +6,14 @@
 }
 
 .home_button {
-  border: 1.5px solid black;
-  width: 220px;
-  border-radius: 80px;
+  border: 1px solid black;
+  width: 230px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.home_button > p {
+  margin: 10px;
 }
 
 .home_heading {
@@ -21,7 +26,7 @@
 
 .home_heading > p {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .business {
@@ -33,7 +38,7 @@
   background-color: #ff247d;
   height: 40vh;
   position: absolute;
-  margin-top: 92vh;
+  margin-top: 43.5vw;
 }
 
 .home_image {
@@ -41,4 +46,21 @@
   width: 60%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+}
+@media (min-width: 200px) and (max-width: 1000px) {
+  .home_button {
+    width: 200px;
+    font-size: 15px;
+  }
+  .home_heading {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .home_background {
+    height: 25vw;
+    margin-top: 92vw;
+  }
+  .home_image {
+    width: 80%;
+  }
 }

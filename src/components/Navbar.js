@@ -1,17 +1,28 @@
-import logo from "../assets/logo_website.png";
 import React from "react";
+import logo from "../assets/logo_website.png";
+import hamburger_website from "../assets/hamburger_website.png";
 import "../styles/Navbar.css";
 
 function Navbar() {
+  const [showNav, setShowNav] = React.useState(false);
   return (
     <div className="navbar_main_container">
-      <div className="logo_container">
-        <img src={logo} />
+      <div className="phone_container">
+        <div className="logo_container">
+          <img src={logo} />
+        </div>
+        <img
+          onClick={() => {
+            setShowNav(!showNav);
+          }}
+          className="hamburger"
+          src={hamburger_website}
+        />
       </div>
-      <div className="list_signup">
+      <div className={"list_signup " + (showNav && "active")}>
         <div className="list_container">
           <p>Product</p>
-          <p>Resources</p>
+          <p>Resource</p>
           <p>Pricing</p>
           <p>Explore</p>
         </div>
