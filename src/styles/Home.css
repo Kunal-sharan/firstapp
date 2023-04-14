@@ -1,0 +1,44 @@
+.home_main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_button {
+  border: 1.5px solid black;
+  width: 220px;
+  border-radius: 80px;
+}
+
+.home_heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 113.4px;
+  line-height: 102px;
+}
+
+.home_heading > p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.business {
+  color: #ff247d;
+}
+
+.home_background {
+  width: 100%;
+  background-color: #ff247d;
+  height: 40vh;
+  position: absolute;
+  margin-top: 92vh;
+}
+
+.home_image {
+  position: relative;
+  width: 60%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
